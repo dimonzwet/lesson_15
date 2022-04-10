@@ -1,0 +1,325 @@
+/* &display=swap */
+@import "null.css";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap);
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ================================================================ */
+body {
+	background: #F5F5F5;
+	font-family:"Roboto", sans-serif;
+}
+[class*="__container"] {
+	/* ! при добавлении отступов безопасности или прибавляем padding*2 к max-width (120+30=1050) или указываем box-sizing: content-box; чтобы отступы безопасности не учитывались*/
+	/* box-sizing: content-box; */
+	max-width: 1050px;
+	margin: 0px auto;
+	/* ! отступы безопасности */
+	padding: 0px 15px;
+}
+/* ================================================================ */
+.header {
+}
+.header__container {
+}
+/* ================================================================ */
+.header-block {
+}
+.header-block *:not(:last-child){
+	margin: 0px 0px 33px 0px;
+}
+.header-block__subtitle {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	position: relative;
+	padding: 0px 0px 0px 33px;
+}
+.header-block__subtitle::before{
+	content: "";
+	background: url("../img/our-promise/mark.svg") 0 0 no-repeat;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 100%;
+	height: 100%;
+	/* display: inline-block; */
+}
+.header-block__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.17;
+	color: #000000;
+}
+.header-block__subtitle_white {
+	color: #fff;
+}
+.header-block__subtitle_white::before{
+	background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
+}
+.header-block__title_white{
+	color: #fff;
+}
+/* ================================================================ */
+.main {
+	flex: 1 1 auto;
+}
+.main__container {
+}
+.main__promise {
+	margin: 86px 0px 122px 0px;
+}
+.main__services {
+	margin: 0px 0px 122px 0px;
+}
+.main__impact {
+	/* margin: 0px 0px 212px 0px; */
+	background: #29C3BE;
+}
+/* ================================================================ */
+.promise {
+}
+.promise__header-block {
+	margin: 0px 0px 68px 0px;
+}
+.promise__items {
+	margin: 0px -12px;
+	display: flex;
+	row-gap: 24px;
+	flex-wrap: wrap;
+}
+.promise__item {
+	padding: 0px 12px;
+	flex: 1 1 33.333%;
+	display: flex;
+	align-items: flex-start;
+	column-gap: 23px;
+	min-width: 300px;
+}
+.promise__icon {
+	flex: 0 1 63px;
+	max-width: 63px;
+}
+.promise__body {
+	margin: 4px 0px 0px 0px;
+}
+.promise__body *:not(:last-child){
+	margin: 0px 0px 20px 0px;
+}
+.promise__label {
+}
+.label-item{
+	font-size: 19px;
+	font-weight: 900;
+	line-height: 1.37;
+	color: #F2726F;
+}
+.promise__text {
+}
+.text-item{
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+/* ================================================================ */
+
+.services {
+}
+.services__container{
+	padding: 110px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	/* overflow: hidden; */
+}
+.services__container::after{
+	content: "";
+	background: url("../img/our-services/blob-2.png") left -570px no-repeat;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(140px, 0px);
+	width: 100%;
+	height: 100%;
+}
+.services__header-block {
+	margin: 0px 0px 78px 0px;
+	position: relative;
+	z-index: 2;
+}
+.services__items {
+	margin: 0px -12px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	position: relative;
+	z-index: 2;
+}
+.services__items:not(:last-child){
+	margin: 0px 0px 66px 0px;
+}
+.services__item {
+	flex: 1 1 33.333%;
+	padding: 0px 12px;
+	min-width: 300px;
+}
+.item-sevices {
+	padding: 50px 44px;
+	background: #FFFFFF;
+	border-radius: 20px;	
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	transition: all 0.3s ease 0s;
+}
+.item-sevices:hover{
+	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+}
+.item-sevices__icon {
+	flex: 0 0 63px;
+	width: 63px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.item-sevices__icon:not(:last-child){
+	margin: 0px 0px 33px 0px;
+}
+.item-sevices__image {
+	max-width: 100%;
+	max-height: 63px;
+}
+.item-sevices__title {
+}
+.item-sevices__title:not(:last-child){
+	margin: 0px 0px 20px 0px;
+}
+.item-sevices__text {
+	flex: 1 1 auto;
+}
+.services__button{
+	align-self: center;
+	background-color: #F2726F;
+	border-radius: 8px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 48px;
+	padding: 0px 25px;
+	transition: all 0.3s ease 0s;
+	position: relative;
+	z-index: 2;
+}
+.services__button:hover{
+	background-color: #f54643;
+}
+/* ================================================================ */
+
+.impact {
+	padding: 0px 0px 212px 0px;
+}
+.impact__container{
+	position: relative;
+}
+.impact__container::before{
+	content: "";
+	background: url("../img/our-impact/blob.png") 0 0 / 100% no-repeat;
+	top: 0;
+	right: 50%;
+	width: 68%;
+	height: 100%;
+	transform: translate(86%,0);
+	position: absolute;
+}
+.impact__top {
+	display: flex;
+	margin: 0px -15px;
+	position: relative;
+}
+.impact__top:not(:last-child){
+	margin-bottom: 79px;
+}
+.impact__header-block {
+	max-width: 411px;
+}
+.impact__content{
+	align-self: flex-end;
+	padding: 20px 15px 0px 15px;
+	flex: 0 0 50%;
+}
+.impact__picture{
+	margin: -7.61% 0px 0px 0px;
+	flex: 0 0 50%;
+	padding: 0px 15px;
+} 
+.impact__image {
+	border-radius: 40px;
+	max-width: 100%;
+}
+.impact__items {
+	position: relative;
+	margin: 0px -12px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+.impact__item {
+	flex: 0 1 25%;
+	padding: 0px 12px;
+}
+.item-impact {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 11px;
+}
+.item-impact__icon {
+	flex: 0 0 76px;
+	max-width: 76px;	
+}
+.item-impact__body {
+}
+.item-impact__body *:not(:last-child){
+	margin: 0px 0px 3px 0px;
+}
+.item-impact__statistics {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	color: #fff;
+}
+.item-impact__label {
+	font-weight: 700;
+	line-height: 1.5;	
+	letter-spacing: 0.15px;
+	color: #5D62B5;
+}
+/* ================================================================ */
+
+/* ================================================================ */
+
+/* ================================================================ */
+
+/* ================================================================ */
+
+/* ================================================================ */
+.footer {
+}
+.footer__container {
+}
+/* ================================================================ */
